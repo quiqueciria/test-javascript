@@ -14,6 +14,12 @@ function contar() {
 const botonAnterior = document.getElementById("anterior");
 botonAnterior.addEventListener("click", contar);
 
+//borrar
+const str1 = "5";
+
+console.log(str1.padStart(2, "0"));
+
+/*
 //CONTAR MÁS
 function contarPlus() {
   //leer el valor del marcador
@@ -43,3 +49,4 @@ function reset() {
 
 const botonReset = document.getElementById("reset");
 botonReset.addEventListener("click", reset);
+*/
