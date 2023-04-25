@@ -3,7 +3,7 @@ import "./style.css";
 // CONTAR MENOS
 function contar() {
   //leer el valor del marcador
-  const marcador = document.getElementById("numero-turno").value;
+  const marcador = document.getElementById("numero-turno").innerText;
 
   //Aplicar el decrecimiento
   const countMinus = parseInt(marcador) - 1;
@@ -17,7 +17,7 @@ botonAnterior.addEventListener("click", contar);
 //CONTAR MÁS
 function contarPlus() {
   //leer el valor del marcador
-  const marcadorPlus = document.getElementById("numero-turno").value;
+  const marcadorPlus = document.getElementById("numero-turno").innerText;
 
   //Aplicar el decrecimiento
   const countPlus = parseInt(marcadorPlus) + 1;
