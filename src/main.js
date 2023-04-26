@@ -1,52 +1,49 @@
 import "./style.css";
 
-// CONTAR MENOS
+// ----------------- COUNT LESS
 function contar() {
-  //leer el valor del marcador
+  //IT READS THE COUNTER
   const marcador = document.getElementById("numero-turno").innerText;
 
-  //Aplicar el decrecimiento
+  //APPLY DECRECENT
   const countMinus = parseInt(marcador) - 1;
 
-  //Mostrar el resultado
+  //SHOW RESULT
   document.getElementById("numero-turno").innerHTML = countMinus;
 }
+
+//CALL TO THE FUNCTION
 const botonAnterior = document.getElementById("anterior");
 botonAnterior.addEventListener("click", contar);
 
-//borrar
-const str1 = "5";
-
-console.log(str1.padStart(2, "0"));
-
-/*
-//CONTAR MÁS
+// ----------------- COUNT MORE
 function contarPlus() {
-  //leer el valor del marcador
+  //IT READS THE COUNTER
   const marcadorPlus = document.getElementById("numero-turno").innerText;
 
-  //Aplicar el decrecimiento
+  //APPLY DECRECENT
   const countPlus = parseInt(marcadorPlus) + 1;
 
-  //Mostrar el resultado
+  //SHOW RESULT
   document.getElementById("numero-turno").innerHTML = countPlus;
 }
 
+//CALL TO THE FUNCTION
 const botonSiguiente = document.getElementById("siguiente");
 botonSiguiente.addEventListener("click", contarPlus);
 
-//RESET
+// ----------------- RESET
 function reset() {
-  //leer el valor del marcador
+  //IT READS THE COUNTER
   const marcadorPlus = document.getElementById("numero-turno").innerText;
 
-  //Aplicar el decrecimiento
+  //APPLY DECRECENT
   const countReset = 0;
 
-  //Mostrar el resultado
+  //SHOW RESULT
   document.getElementById("numero-turno").innerHTML = countReset;
 }
 
+//CALL TO THE FUNCTION
 const botonReset = document.getElementById("reset");
 botonReset.addEventListener("click", reset);
-*/
